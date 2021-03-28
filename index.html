@@ -3,12 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Module 4 Project</title>
+    <title>Donut Maker</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
 </head>
 <body>
-    <div class="container">
+    <header>
+        <h1>Michele's Bake Shoppe</h1>
+        <hr />
+        <nav>
+            <div>
+                <a class="about-the-company-nav" href = "mailto: mhowar92@gmail.com">Contact us! </a>
+            </div>
+            <div>
+                <a class="inspiration-nav"  href="https://orteil.dashnet.org/cookieclicker/" target="_blank">Our Inspiration</a>
+            </div>
+            <div>
+                <a class="about-the-developer-nav" href="https://linkedin.com/in/mahoward21">Find the Developer on LinkedIn</a>
+            </div>
+        </nav>
+    </header>
+    <div class="about-company modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>About the Bakery</h2>
+          <p><strong>Michele's Baking Shoppe</strong> was opened in 2021 following a terrible world-wide pandemic that swept the nation with death and disease. In the midst of the darkness, Michele's donut, bring light.</p>
+        </div>
+    </div>
+    <div class="cookie-clicker modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Inspiration</h2>
+          <p>Cookie Clicker is an existing game that gave Michele inspiration. Click <a target="_blank" href="https://orteil.dashnet.org/cookieclicker/">here</a> to be inspired!</p>
+          <a target="_blank" href="https://orteil.dashnet.org/cookieclicker/"></a>
+        </div>
+    </div>
+    <div class="about-me modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>About the Developer</h2>
+          <p> Michele Howard is a coder by day, and a baker by night. She fights the pandemic with sweet distractions.</p>
+          <div class="modal-links">
+            <a class="modal-link" target="_blank" href="https://www.linkedin.com/in/MAhoward21/">LinkedIn</a>
+            <a class="modal-link" target="_blank" href="https://MAhoward21.github.io/">Portfolio</a>
+            <a class="modal-link" target="_blank" href="https://github.com/Mahoward21">GitHub</a>
+        </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="stats">
+            <div class="donut-count-div">
+                <h2 class="donut-count"></h2>
+            </div>
+            <div class="flex">
+                <div class="donut-multiplier-div sale">
+                    <img src="src/css/images/donut.jpeg" class="sale-img" />
+                    <h2>Donut Multipliers:</h2>
+                    <h2 class="donut-multiplier-count">0</h2>
+                    <p class="donut-multiplier-price">Cost: 10 Donuts </p>
+                    <button visibility="hidden" class="add-donut-multiplier button">Buy now!</button>
+
+                </div>
+                <div class="click-donut-div">
+                    <!-- <img class="add-donut" src="src/css/images/assorted donuts.jpg"> -->
+                    <img class="add-donut" src="src/css/images/assorted donuts.jpg" usemap="#donut">
+                    <h3 class="donuts-per-click">Current Amount</h3>
+                    <h2 class="donuts-per-second"> 0</h2>
+                </div>
+                <div class="auto-clicker-div sale">
+                    <img src="src/css/images/donut.jpg" class="sale-img" />
+                    <h2>Auto-Clickers:</h2>
+                    <h2 class="auto-clicker-count">0</h2>
+                    <p class="auto-clicker-price">Cost: 100 Donuts <br> (Cost Increases by 10% after each purchase)</p>
+                    <button class="add-auto-clicker button">Buy now!</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="reset-div">
+            <button class="reset-button">RESET GAME</button>
+        </div>
+    </div>
+   
         <div class="anchor"></div>
     </div>
-    <script src="/src/app.js"></script>
+    <!-- <script src="/src/js/DonutMaker.js"></script> -->
+    <script src="/src/js/app.js" type="module"></script>
+    <footer class="footer">
+        <small class="footer__copyright">&copy;2021</small>
+      </footer>
 </body>
 </html>
